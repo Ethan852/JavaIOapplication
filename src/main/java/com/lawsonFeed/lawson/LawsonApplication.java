@@ -1,6 +1,7 @@
 package com.lawsonFeed.lawson;
 
 import com.lawsonFeed.lawson.output.WordCreator;
+import com.lawsonFeed.lawson.output.WordCreatorDocx4j;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
@@ -21,6 +22,9 @@ public class LawsonApplication {
 		System.out.println("Hello World");
 		WordCreator creator = new WordCreator();
 		creator.createWordDocuments();
+		WordCreatorDocx4j creator2 = new WordCreatorDocx4j();
+		creator2.createDocument();;
+		System.out.println("Finish all");
 
 	}
 
