@@ -1,5 +1,6 @@
 package com.lawsonFeed.lawson;
 
+import com.lawsonFeed.lawson.output.FileCreator;
 import com.lawsonFeed.lawson.output.WordCreator;
 import com.lawsonFeed.lawson.output.WordCreatorDocx4j;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
@@ -20,10 +21,15 @@ public class LawsonApplication {
 
 		SpringApplication.run(LawsonApplication.class, args);
 		System.out.println("Hello World");
-		WordCreator creator = new WordCreator();
-		creator.createWordDocuments();
-		WordCreatorDocx4j creator2 = new WordCreatorDocx4j();
-		creator2.createDocument();;
+
+		FileCreator creator3 = new FileCreator();
+		creator3.createFile();
+
+//		WordCreator creator = new WordCreator();
+//		creator.createWordDocuments();
+//		WordCreatorDocx4j creator2 = new WordCreatorDocx4j();
+//		creator2.createDocument();;
+
 		System.out.println("Finish all");
 
 	}
