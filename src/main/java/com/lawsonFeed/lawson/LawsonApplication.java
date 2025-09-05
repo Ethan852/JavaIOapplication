@@ -16,10 +16,12 @@ import java.io.IOException;
 @SpringBootApplication
 public class LawsonApplication {
 
+
 	public static void main(String[] args) {
 
 		SpringApplication.run(LawsonApplication.class, args);
 		System.out.println("Hello World");
+
 		FileCreator creator3 = new FileCreator();
 		creator3.createFile();
 
@@ -27,6 +29,7 @@ public class LawsonApplication {
 //		creator.createWordDocuments();
 //		WordCreatorDocx4j creator2 = new WordCreatorDocx4j();
 //		creator2.createDocument();;
+
 		System.out.println("Finish all");
 
 	}
